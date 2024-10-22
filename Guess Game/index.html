@@ -1,0 +1,45 @@
+
+
+<!-- Diya Diya(000882035)
+Date: 22 March 2023
+Purpose: To show the static images and buttons related to the game -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <h1>TOM IS HUNGRY....FIND THE FAVOURITE FOOD OF THE TOM </h1>
+    <h2>TOM WANTS TO PLAY....FIND THE FAVOURITE GAME OF THE TOM</h2>  
+   
+    <img src="images/tom.jpg" alt="pic">
+   
+    <svg id="canvas" width="800" height="350" style="border: 5px solid black;display:inline">
+        <image id="box1" href="images/Milk.jpg"   x="100" y="80"  height="100px" width="120px" onclick="milk()"/>
+        <image id="box2" href="images/toast.jpg"  x="300" y="95"  height="100px" width="120px" onclick="toast()"/>
+        <image id="box3" href="images/water.jpg"  x="500" y="95"  height="100px" width="120px" onclick="water()"/>
+        <image id="box4" href="images/ludo.jpg"  x="100" y="205"  height="100px" width="120px" onclick="ludo()"/>
+        <image id="box5" href="images/carrom.jpg"  x="300" y="205"  height="100px" width="120px" onclick="carrom()"/>
+        <image id="box6" href="images/football.jpg"  x="500" y="205"  height="100px" width="120px" onclick="football()"/> 
+        
+    </svg>
+    <p>Choose and click the favorite food of the tom and you have only one chance... Choose and click the favourite game of the tom and you have only one chance<button onclick="refresh()">REFRESH</button>
+    </p>
+    
+    <p id="answer"></p>
+    <p id="answer1"></p>
+    <h3 id="break">HAVE FUN</h3>
+    
+
+<footer>
+    <p>&copy;Diya Diya
+    <br>Mohawk College,2023</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/**
+Diya Diya(000882035)
+Date: 22 March 2023
+Purpose: Styling and animation of the game
+**/
+
+body{
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+}
+svg{
+  margin: 100px;
+  margin-bottom: 20px;
+  margin-top:50px;
+}
+h1,h2{
+  text-align: center;
+}
+img{
+  margin:20px;
+}
+p{
+  text-align: center;
+  font-weight: bold;
+}
+#break {
+  min-width:100px;
+  max-width:100px;
+  animation-name:game1;  
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  position:relative;
+  border-radius: 20% ;
+  border-width:4px;
+  animation-timing-function:cubic-bezier(0.1, 0.17, 0.3, 0.1);
+}
+
+
+@keyframes game1 {
+  0% {left:0px; top:0px;}
+  33% {left:50%; top:10px;}
+  55% {left:95%; top:100px;background-color: pink;}
+  100% {left:55%; top:10px;background-color:pink;}
+  
+  
+} 
+button{
+  margin:20px;
+}
+footer {
+  margin-top: 150px;
+  border-top: solid black 2px;
+  text-align: center;
+}
+/*for mobile phones*/
+@media screen and (min-width: 510px) {
+  body{
+  padding:10px;
+  width:100%;
+  }
+}
+/*for desktop*/
+@media screen and (min-width: 710px) {
+  body{
+  width:100%;
+  
+  }
+}

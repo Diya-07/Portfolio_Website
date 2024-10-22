@@ -1,0 +1,32 @@
+.container{
+    margin-top: 40px;
+}
+.col{
+    margin-top: 20px;
+}
+
+span{
+    background-color:green;
+    color: white;
+    width: 40px;
+}
+button{
+    width: 100%;
+}
+.spin{
+animation-name: assignment1;
+animation-duration: 5s;
+}
+@keyframes assignment1{
+    0% {transform: perspective(500px) rotateY(0);}
+    100%{transform: perspective(500px) rotateY(180deg);}
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer p {
+    margin-top: 250px;
+    border-top: solid black 2px;
+    text-align: center;
+}
