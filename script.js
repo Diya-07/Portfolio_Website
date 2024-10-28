@@ -1,35 +1,39 @@
+
 const projects = [
     {
-        title: "JavaScript Project 1: Prime Number Finder",
-        description: "A brief description of project 1, showcasing what it does.",
-        url: "Prime_Number_Finder/index.html",
+        title: "Prime Number Finder",
+        description: "This project deals with finding prime numbers.",
+        link: "Prime_Number_Finder/index.html",
+        image: "image1.jpg" // Use actual image paths
     },
     {
-        title: "JavaScript Project 2: Deals with Events",
-        description: "A brief description of project 2, showcasing what it does.",
-        url: "Events_javascript/index.html",
+        title: "Events",
+        description: "This project deals with events.",
+        link: "Events_javascript/index.html",
+        image: "image2.jpg"
     },
     {
-        title: "JavaScript Project 3: Guess Game",
-        description: "A brief description of project 3, showcasing what it does.",
-        url: "Guess Game/index.html",
-    },
+        title: "Guess Game",
+        description: "This project is basically a guess game.",
+        link: "Guess Game/index.html",
+        image: "image3.jpg"
+    }
 ];
 
-// Function to display projects
-function displayProjects() {
-    const projectList = document.getElementById("project-list");
-    projects.forEach((project) => {
-        const projectItem = document.createElement("div");
-        projectItem.innerHTML = `
-            <h3 style="color: #4a90e2;">${project.title}</h3>
-            <p>${project.description}</p>
-            <a href="${project.url}" style="color: #4a90e2;">View Project</a>
-            <hr /> <!-- Adds a horizontal line for separation -->
-        `;
-        projectList.appendChild(projectItem);
-    });
-}
+const projectContainer = document.getElementById('projectContainer');
 
-// Call the function to display projects when the page loads
-window.onload = displayProjects;
+projects.forEach(project => {
+    const card = document.createElement('div');
+    card.className = "col-md-4 mb-4"; 
+    card.innerHTML = `
+        <div class="card">
+            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+            <div class="card-body">
+                <h5 class="card-title">${project.title}</h5>
+                <p class="card-text">${project.description}</p>
+                <a href="${project.link}" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    `;
+    projectContainer.appendChild(card);
+});

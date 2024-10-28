@@ -1,19 +1,30 @@
+header {
+    background: black;
+    color: yellow;
+    padding: 20px 10px;
+    text-align: center;
+   
+    width:100%;
+}
+
 body {
-    background-color: #f4f4f4;
+    background-color: beige;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    
+    
 }
 h1{
-    font-size: 45px;
+    font-size: 50px;
 }
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+h4,h5{
+    text-decoration: underline;
+    color:brown;
+    
 }
+
+
 
 nav ul {
     list-style: none;
@@ -26,12 +37,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: lightgray;
     text-decoration: none;
 }
 
 section {
-    padding: 20px;
+    padding: 15px;
 }
 
 footer {
