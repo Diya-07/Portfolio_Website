@@ -4,19 +4,19 @@ const projects = [
         title: "Prime Number Finder",
         description: "This project deals with finding prime numbers.",
         link: "Prime_Number_Finder/index.html",
-        image: "image1.jpg" 
+        image: "images/image1.jpg" 
     },
     {
         title: "Events",
         description: "This project deals with events.",
         link: "Events_javascript/index.html",
-        image: "image2.jpg"
+        image: "images/image2.jpg"
     },
     {
         title: "Guess Game",
         description: "This project is basically a guess game.",
         link: "Guess Game/index.html",
-        image: "image3.jpg"
+        image: "images/image3.jpg"
     }
 ];
 
