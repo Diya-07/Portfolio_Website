@@ -4,7 +4,7 @@ const projects = [
         title: "Prime Number Finder",
         description: "This project deals with finding prime numbers.",
         link: "Prime_Number_Finder/index.html",
-        image: "image1.jpg" // Use actual image paths
+        image: "image1.jpg" 
     },
     {
         title: "Events",
