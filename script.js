@@ -20,7 +20,7 @@ const projects = [
     }
 ];
 
-const projectContainer = document.getElementById('projectContainer');
+const container = document.getElementById('projectContainer');
 
 projects.forEach(project => {
     const card = document.createElement('div');
@@ -35,5 +35,5 @@ projects.forEach(project => {
             </div>
         </div>
     `;
-    projectContainer.appendChild(card);
+    container.appendChild(card);
 });
